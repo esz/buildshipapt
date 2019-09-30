@@ -1,0 +1,13 @@
+/build
+/buildshipapt-core/build
+/buildshipapt-core/bin
+/buildshipapt-web/build
+/buildshipapt-web/bin
+/.gradle
+.settings
+.project
+.classpath
+.checkstyle
+.factorypath
+.apt_generated
+.apt_generated_tests

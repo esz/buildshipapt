@@ -1,0 +1,21 @@
+plugins {
+  id "net.ltgt.apt" version "0.21" apply false
+}
+
+allprojects {
+	group = 'at.szente.sample'
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse-wtp'
+	apply plugin: 'net.ltgt.apt-eclipse'
+
+	repositories {
+		jcenter()
+	}
+
+	eclipse {
+		synchronizationTasks 'eclipseJdtApt', 'eclipseFactorypath', 'eclipseJdt'
+	}
+}
